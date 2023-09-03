@@ -33,6 +33,8 @@ class _CartPageState extends State<CartPage> {
                       style: TextStyle(fontSize: 20),
                     ),
 
+                    const SizedBox(height: 25),
+
                     //list of cart items
                     Expanded(
                       child: ListView.builder(

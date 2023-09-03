@@ -27,6 +27,7 @@ class CoffeeTile extends StatelessWidget {
         trailing: IconButton(
           icon: icon,
           onPressed: onPressed,
+          color: Colors.brown,
         ),
       ),
     );

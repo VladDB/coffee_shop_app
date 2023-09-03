@@ -1,3 +1,4 @@
+import 'package:coffee_shop_app/hidden_drawer.dart';
 import 'package:coffee_shop_app/models/coffee_shop.dart';
 import 'package:coffee_shop_app/pages/home_page.dart';
 import 'package:flutter/material.dart';
@@ -14,9 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
         create: (context) => CoffeeShop(),
-        builder: (context, child) => const MaterialApp(
+        builder: (context, child) => MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: HomePage(),
+          home: HiddenDrawer(),
+          theme: ThemeData(primarySwatch: Colors.brown),
         ),
     );
   }
